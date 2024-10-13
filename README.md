@@ -1,8 +1,8 @@
 # CFS-LLF
 
 
-# Copywrite
+## Copywrite
 
 CFS-LLF extension by Al Amjad Tawfiq Isstaif
 
-Copyright (C) 2023 Al Amjad Tawfiq Isstaif <alamjad.isstaif@cl.ac.uk>
+Copyright (C) 2023 Al Amjad Tawfiq Isstaif <alamjad.isstaif@cl.cam.ac.uk>
