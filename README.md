@@ -8,6 +8,10 @@ CPU resource units, such as [Kubernetes’ millicores](https://kubernetes.io/doc
 
 CFS-LLF extends CFS to mitigate the CPU contention that arises when a large number of containers are co-located in a Linux cluster. The design of LLF is inspired by the Shortest Remaining Time First (SRTF) policy but differs by prioritising containers with the lightest load over a reference period, which corresponds to one millicore (i.e., 1 second). CFS-LLF employs a load credit mechanism to prioritise corresponding cgroups based on their recent load, favouring those with lower load credit consumption. This mechanism approximates the LLF policy by scheduling cgroups according to the CPU time they have already received, assuming this reflects their remaining demand. This approach is particularly effective for serverless workloads, which are typically short-lived and have minimal concurrent invocations.
 
+## Publications
+
+Al Amjad Tawfiq Isstaif and Richard Mortier. 2023. **Towards Latency-Aware Linux Scheduling for Serverless Workloads**. In Proceedings of the 1st Workshop on SErverless Systems, Applications and MEthodologies (SESAME '23). Association for Computing Machinery, New York, NY, USA, 19–26. https://doi.org/10.1145/3592533.3592807
+
 ## Copywrite
 
 CFS-LLF extension by Al Amjad Tawfiq Isstaif
